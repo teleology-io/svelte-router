@@ -626,6 +626,11 @@ readdirp@^4.0.1:
   resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-4.0.2.tgz#388fccb8b75665da3abffe2d8f8ed59fe74c230a"
   integrity sha512-yDMz9g+VaZkqBYS/ozoBJwaBhTbZo3UNYQHNRw1D3UFQB8oHB4uS/tAODO+ZLjGWmUbKnIlOWO+aaIiAxrUWHA==
 
+regexparam@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/regexparam/-/regexparam-3.0.0.tgz#1673e09d41cb7fd41eaafd4040a6aa90daa0a21a"
+  integrity sha512-RSYAtP31mvYLkAHrOlh25pCNQ5hWnT106VukGaaFfuJrZFkGRX5GhUAdPqpSDXxOhA2c4akmRuplv1mRqnBn6Q==
+
 rollup@^4.20.0:
   version "4.30.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-4.30.0.tgz#44ae4260029a8362113ef2a0cee7e02f3f740274"

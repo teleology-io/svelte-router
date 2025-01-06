@@ -1,7 +1,7 @@
 <script lang="ts">
   import Route from "./Route.svelte";
   import { listen } from "./history";
-    import { resolve } from "./resolution";
+  import { resolve } from "./resolution";
   import { type RouteDefinition } from "./types";
 
   interface Props {
@@ -14,10 +14,10 @@
   let matches = $state<RouteDefinition[]>([]);
 
   const notify = (_: any) => {
-    matches = resolve(routes)
+    matches = resolve(routes);
   };
 
-  listen(notify)
+  listen(notify);
 </script>
 
 {#each matches as route, index (route.path)}

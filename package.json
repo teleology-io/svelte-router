@@ -1,6 +1,6 @@
 {
 	"name": "@teleology/svelte-router",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
@@ -29,6 +29,7 @@
 		}
 	},
 	"peerDependencies": {
+		"regexparam": "^3.0.0",
 		"svelte": "^5.0.0"
 	},
 	"devDependencies": {
