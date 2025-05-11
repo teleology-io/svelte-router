@@ -4,11 +4,11 @@
   import { resolve } from "./resolution";
   import { type RouteDefinition } from "./types";
 
-  interface Props {
+  type Props = Record<string, any> & {
     routes?: RouteDefinition[];
-  }
+  };
 
-  let { routes = [] }: Props = $props();
+  let { routes = [], ...rest }: Props = $props();
 
   // Sort to ensure '*' is at bottom, then try to find matches
   let matches = $state<RouteDefinition[]>([]);
@@ -21,5 +21,5 @@
 </script>
 
 {#each matches as route, index (route.path)}
-  <Route {...route} />
+  <Route {...route} {...rest} />
 {/each}

@@ -8,6 +8,8 @@
     redirect = "/",
     guard = undefined,
     route,
+    path,
+    ...rest
   }: RouteResolution = $props();
 
   let pid;
@@ -49,14 +51,14 @@
 {#if layout}
   {#await multiloader([layout, component]) then [lay, comp]}
     {@const SvelteComponent_1 = lay}
-    <SvelteComponent_1 {route}>
+    <SvelteComponent_1 {route} {...rest}>
       {@const SvelteComponent = comp}
-      <SvelteComponent {route} />
+      <SvelteComponent {route} {...rest} />
     </SvelteComponent_1>
   {/await}
 {:else}
   {#await loader(component) then comp}
     {@const SvelteComponent_2 = comp}
-    <SvelteComponent_2 {route} />
+    <SvelteComponent_2 {route} {...rest} />
   {/await}
 {/if}
